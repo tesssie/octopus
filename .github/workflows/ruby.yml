@@ -17,7 +17,7 @@ jobs:
         rvm:
           - 2.6.6
           - 2.7.8
-          - 3.2.8
+          - 3.1.0
         gemfile:
           - gemfiles/rails42.gemfile
           
@@ -32,7 +32,7 @@ jobs:
         ruby-version: ${{ matrix.rvm }}
 
     - name: Install Bundler
-      run: gem install bundler
+      run: gem install bundler -v 2.4
 
     - name: Install dependencies
       run: |
